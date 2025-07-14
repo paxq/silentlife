@@ -1,0 +1,54 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "silentlife:assassins_geode"
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Assassin's Geode",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                "An item used by assassins ",
+                "to locate their target.",
+                {
+                  "text": "Right Click to Locate",
+                  "color": "gray",
+                  "italic": false
+                },
+                " ",
+                {
+                      "text": "Targeted Player:",
+                      "color": "gray",
+                      "italic": false
+                },
+                {
+                  "selector": "@e[tag=assassin_target]",
+                  "color": "dark_red"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

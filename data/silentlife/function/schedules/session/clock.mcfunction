@@ -1,0 +1,1 @@
+execute as @e[type=text_display, tag=session_timer, limit=1, scores={session_timer=0..}] at @s run schedule function silentlife:schedules/session/decrease_time 1s

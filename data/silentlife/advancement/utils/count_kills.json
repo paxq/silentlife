@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "silentlife:assassin/increase_kill_count"
+  }
+}

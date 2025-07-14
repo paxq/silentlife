@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrier",
+        "components": {
+          "minecraft:item_model": "silentlife:ritual_summon"
+        }
+      },
+      "title": "A Dangerous Task",
+      "description": "Begin the ritual",
+      "announce_to_chat": false
+    },
+    "parent": "silentlife:root",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+}

@@ -1,0 +1,2 @@
+# give @s warped_fungus_on_a_stick[item_name={"color":"green","text":"Assassin's Geode"},item_model="silentlife:assassins_geode",lore=["An item used by assassins ", "to locate their target.",{"color":"gray","italic":false,"text":"Right Click to Locate"}]] 1
+loot give @s loot silentlife:assassins_geode

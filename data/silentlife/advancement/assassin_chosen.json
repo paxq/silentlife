@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrier",
+        "components": {
+          "minecraft:item_model": "silentlife:assassin_chosen"
+        }
+      },
+      "title": "And You Are...",
+      "description": "Get chosen as the assassin",
+      "announce_to_chat": false
+    },
+    "parent": "silentlife:root",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+}

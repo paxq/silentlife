@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrier",
+        "components": {
+          "minecraft:item_model": "silentlife:heart_break_2"
+        }
+      },
+      "title": "Again?",
+      "description": "Lose your second life",
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "parent": "silentlife:lose_first_life",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lifeDisplay": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+}

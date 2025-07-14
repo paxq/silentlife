@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrier",
+        "components": {
+          "minecraft:item_model": "silentlife:lone_survivor"
+        }
+      },
+      "title": "Lone Survivor",
+      "description": "Be the last remaining",
+      "announce_to_chat": false,
+      "frame": "challenge"
+    },
+    "parent": "silentlife:root",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+}

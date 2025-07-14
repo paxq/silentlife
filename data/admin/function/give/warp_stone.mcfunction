@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick[item_name={"color":"blue","text":"Warp Stone"},item_model="silentlife:warp_stone",lore=["An ancient stone that radiates with a strange energy.",{"color":"gray","italic":false,"text":"Right Click to Activate"}]] 1

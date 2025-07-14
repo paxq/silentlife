@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"ritual_enemy\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "silentlife:ritual/count_enemy_death"
+  }
+}

@@ -1,0 +1,73 @@
+# title @s title " "
+# title @s subtitle ["Your target is: ",{"color":"gray","selector":"@e[tag=assassin_target, tag=!assassin]"}]
+# title @s subtitle [{"color":"dark_red","text":"◀"},{"color":"red","text":"◀"},{"color":"white","text":"<>"},{"color":"red","text":"▶"},{"color":"dark_red","text":"▶"}]
+
+
+# tp assassin's probes
+tp @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] ^12 ^ ^12
+tp @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] ^60 ^ ^1
+tp @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] ^-12 ^ ^12
+tp @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] ^-60 ^ ^1
+
+# Assign a score to each probe based on distance
+scoreboard players set @e[type=block_display, tag=assassin_probe, sort=nearest] assassin_tracking_score 0
+# left 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=10..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=20..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=30..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=40..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=50..] run scoreboard players add @s assassin_tracking_score 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=60..] run scoreboard players add @s assassin_tracking_score 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=70..] run scoreboard players add @s assassin_tracking_score 3
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=80..] run scoreboard players add @s assassin_tracking_score 3
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=90..] run scoreboard players add @s assassin_tracking_score 4
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=100..] run scoreboard players add @s assassin_tracking_score 4
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=150..] run scoreboard players add @s assassin_tracking_score 10
+# left 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=10..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=20..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=30..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=40..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=50..] run scoreboard players add @s assassin_tracking_score 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=60..] run scoreboard players add @s assassin_tracking_score 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=70..] run scoreboard players add @s assassin_tracking_score 3
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=80..] run scoreboard players add @s assassin_tracking_score 3
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=90..] run scoreboard players add @s assassin_tracking_score 4
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=100..] run scoreboard players add @s assassin_tracking_score 4
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=150..] run scoreboard players add @s assassin_tracking_score 10
+# right 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=10..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=20..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=30..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=40..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=50..] run scoreboard players add @s assassin_tracking_score 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=60..] run scoreboard players add @s assassin_tracking_score 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=70..] run scoreboard players add @s assassin_tracking_score 3
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=80..] run scoreboard players add @s assassin_tracking_score 3
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=90..] run scoreboard players add @s assassin_tracking_score 4
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=100..] run scoreboard players add @s assassin_tracking_score 4
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=150..] run scoreboard players add @s assassin_tracking_score 10
+# right 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=10..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=20..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=30..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=40..] run scoreboard players add @s assassin_tracking_score 1
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=50..] run scoreboard players add @s assassin_tracking_score 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=60..] run scoreboard players add @s assassin_tracking_score 2
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=70..] run scoreboard players add @s assassin_tracking_score 3
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=80..] run scoreboard players add @s assassin_tracking_score 3
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=90..] run scoreboard players add @s assassin_tracking_score 4
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=100..] run scoreboard players add @s assassin_tracking_score 4
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] at @s run execute if entity @e[tag=assassin_target, distance=150..] run scoreboard players add @s assassin_tracking_score 10
+
+# Compare scores and display result
+# close left
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1] assassin_tracking_score as @s run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1] assassin_tracking_score run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1] assassin_tracking_score run title @a[tag=assassin] actionbar [{"color":"red","text":"◀"},{"color":"white","text":"<>"}]
+# far left
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1, sort=nearest] run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1] assassin_tracking_score as @s run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1] assassin_tracking_score run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1] assassin_tracking_score run title @a[tag=assassin] actionbar [{"color":"dark_red","text":"◀"},{"color":"red","text":"◀"},{"color":"white","text":"<>"}]
+# close right
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1, sort=nearest] run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1] assassin_tracking_score as @s run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1] assassin_tracking_score run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1] assassin_tracking_score run title @a[tag=assassin] actionbar [{"color":"white","text":"<>"},{"color":"red","text":"▶"}]
+# far right
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1, sort=nearest] run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1] assassin_tracking_score as @s run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1] assassin_tracking_score run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1] assassin_tracking_score run title @a[tag=assassin] actionbar [{"color":"white","text":"<>"},{"color":"red","text":"▶"},{"color":"dark_red","text":"▶"}]
+# center
+execute as @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_1"}, limit=1, sort=nearest] run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"left_2"}, limit=1] assassin_tracking_score as @s run execute if score @s assassin_tracking_score = @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_1"}, limit=1] assassin_tracking_score run execute if score @s assassin_tracking_score <= @e[type=block_display, tag=assassin_probe, nbt={CustomName:"right_2"}, limit=1] assassin_tracking_score run title @a[tag=assassin] actionbar [{"color":"white","text":"<>"}]

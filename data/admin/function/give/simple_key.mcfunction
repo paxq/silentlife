@@ -1,0 +1,1 @@
+give @s trial_key[item_model="silentlife:simple_key",lore=[{"color":"gray","text":"Unlocks a simple lock"}],item_name="Simple Key"] 1

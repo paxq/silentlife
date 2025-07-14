@@ -1,0 +1,1 @@
+give @s raw_copper[item_name={"color":"green","text":"Shiny Rock"},item_model="silentlife:assassins_geode",lore=["A shiny rock or geode."]] 1

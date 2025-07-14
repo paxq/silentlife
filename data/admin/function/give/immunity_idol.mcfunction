@@ -1,0 +1,1 @@
+execute unless entity @s[nbt={SelectedItem:{components:{"minecraft:item_model":"silentlife:immunity_idol"}, count:1}}] run give @s ominous_trial_key[item_name="Immunity Idol",item_model="silentlife:immunity_idol",lore=["A sacred relic that protects the bearer from harm."],enchantments={"silentlife:immunity":1},tooltip_display={hidden_components:["enchantments"]}] 1

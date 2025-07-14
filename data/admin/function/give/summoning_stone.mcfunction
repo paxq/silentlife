@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick[item_name={"text":"Summoning Stone", "color":"aqua"},lore=["An ancient stone once used for rituals.",{color:"gray",italic:false,text:"Place on a diamond pedestal to activate."}],item_model="silentlife:empty_summoning_stone"] 1

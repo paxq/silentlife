@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " g ",
+    "ldl",
+    " g "
+  ],
+  "key": {
+    "l": "lapis_lazuli",
+    "d": "diamond",
+    "g": "gold_ingot"
+  },
+  "result": {
+    "id": "minecraft:knowledge_book",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Crystal Core",
+        "color": "blue"
+      },
+      "minecraft:item_model": "minecraft:knowledge_book",
+      "minecraft:lore": [
+        "The core of an ancient stone."
+      ]
+    },
+    "count": 1
+  }
+}

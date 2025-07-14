@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick[item_name={"color":"white","text":"Broken Warp Stone"},item_model="silentlife:broken_warp_stone",lore=["A broken ancient stone that no longer ", "radiates with a strange energy."]] 1

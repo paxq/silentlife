@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:barrier",
+        "components": {
+          "minecraft:item_model": "silentlife:bloodlust"
+        }
+      },
+      "title": "Bloodlust",
+      "description": "Kill three players",
+      "announce_to_chat": false,
+      "frame": "challenge",
+      "hidden": true
+    },
+    "parent": "silentlife:kill_player",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "killCount": 3
+              }
+            }
+          ],
+          "entity": {
+            "type": "minecraft:player"
+          }
+        }
+      }
+    }
+}

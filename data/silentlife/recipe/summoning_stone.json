@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ei ",
+    "ici",
+    " ie"
+  ],
+  "key": {
+    "i": "minecraft:iron_ingot",
+    "c": "minecraft:knowledge_book",
+    "e": "minecraft:emerald"
+  },
+  "result": {
+    "id": "minecraft:warped_fungus_on_a_stick",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Summoning Stone",
+        "color": "aqua"
+      },
+      "minecraft:item_model": "silentlife:empty_summoning_stone",
+      "minecraft:lore": [
+        "An ancient stone once used for rituals.",
+        {
+          "text": "Place on a diamond pedestal to activate.",
+          "color": "gray",
+          "italic": false
+        }
+      ]
+    },
+    "count": 1
+  }
+}

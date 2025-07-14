@@ -1,0 +1,2 @@
+# give @s nether_star[consumable={consume_seconds:0,animation:"eat",sound:"block.amethyst_block.chime",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"block.amethyst_cluster.break"}]},item_name="Summoning Stone",lore=["An ancient stone once used for rituals,","now imbued with life."],item_model="silentlife:full_summoning_stone"] 1
+give @s warped_fungus_on_a_stick[item_name={text:"Summoning Stone", color:aqua},lore=["An ancient stone once used for rituals,","now imbued with life."],item_model="silentlife:full_summoning_stone"] 1

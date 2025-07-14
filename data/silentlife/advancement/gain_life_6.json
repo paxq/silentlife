@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:barrier",
+      "components": {
+        "minecraft:item_model": "silentlife:gain_life_6"
+      }
+    },
+    "title": "Invincible",
+    "description": "Reach six lives",
+    "announce_to_chat": false,
+    "frame": "challenge",
+    "hidden": true
+  },
+  "parent": "silentlife:gain_life",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
