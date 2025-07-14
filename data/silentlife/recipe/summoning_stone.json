@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ei ",
+    "ni ",
     "ici",
-    " ie"
+    " in"
   ],
   "key": {
     "i": "minecraft:iron_ingot",
     "c": "minecraft:knowledge_book",
-    "e": "minecraft:emerald"
+    "n": "minecraft:iron_nugget"
   },
   "result": {
     "id": "minecraft:warped_fungus_on_a_stick",
