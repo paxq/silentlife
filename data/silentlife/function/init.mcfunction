@@ -72,6 +72,11 @@ execute if block -78 -17 28 dropper{CustomName:{"italic":false,"text":"Vault"}, 
 execute unless block -78 -17 28 dropper{CustomName:{"italic":false,"text":"Vault"}} run setblock -78 -17 28 dropper[facing=down]{lock:{items:"trial_key",count:1,components:{"minecraft:item_model":"silentlife:simple_key"}},Items:[{Slot:4b,id:"minecraft:warped_fungus_on_a_stick",count:1,components:{"minecraft:item_model":"silentlife:warp_stone","minecraft:item_name":{"color":"blue","text":"Warp Stone"},"minecraft:lore":["An ancient stone that radiates with a strange energy.",{"color":"gray","italic":false,"text":"Right Click to Activate"}]}},{Slot:1b,id:"minecraft:compass",count:1,components:{"minecraft:lodestone_tracker":{target:{dimension:"minecraft:overworld",pos:[I;424,36,461]},tracked:false}}},{Slot:7b,id:"minecraft:trial_key",count:1,components:{"minecraft:item_model":"silentlife:simple_key","minecraft:item_name":"Simple Key","minecraft:lore":[{"color":"gray","text":"Unlocks a simple lock"}]}}],CustomName:{"italic":false,"text":"Vault"}} replace
 summon block_display -78.05 -17 27.95 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.1f,1.1f,1.1f]},block_state:{Name:"minecraft:glass"}}
 
+
+# Black Hole
+execute unless entity @e[type=item_display, tag=black_hole] run summon item_display -53 147 37 {HasVisualFire:1b,item_display:"gui",Tags:["black_hole"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,5f,1f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}
+
+
 # Update Player lives
 # data modify storage silentlife:data lives set value []
 # summon item_display ~ ~ ~ {Tags:["life_update"]}

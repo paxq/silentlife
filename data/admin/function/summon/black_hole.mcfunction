@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {HasVisualFire:1b,item_display:"gui",Tags:["black_hole"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,5f,1f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}

@@ -26,3 +26,6 @@ execute as @e[type=item, nbt={Item:{id:"minecraft:ominous_trial_key",count:1,com
 
 # Tick ritual
 function silentlife:ritual/tick
+
+# Handle black hole
+execute as @e[tag=black_hole, type=item_display, limit=1] run execute as @a[distance=..2] run execute in silentlife:after run tp @s ~ ~ ~
