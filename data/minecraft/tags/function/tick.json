@@ -1,6 +1,5 @@
 {
   "values": [
-      "silentlife:main",
-      "life_vessel:tick"
+      "silentlife:main"
   ]
 }

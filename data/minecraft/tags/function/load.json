@@ -1,6 +1,5 @@
 {
   "values": [
-      "silentlife:init",
-      "life_vessel:load"
+      "silentlife:init"
   ]
 }
