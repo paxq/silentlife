@@ -41,7 +41,7 @@ execute as @a[tag=assassin] at @s run function silentlife:assassin/summon_probes
 clear @a warped_fungus_on_a_stick[item_model="silentlife:assassins_geode"]
 clear @a raw_copper[item_model="silentlife:assassins_geode"]
 execute as @a[tag=assassin] run function admin:give/assassins_geode
-execute as @r[tag=!assassin] at @s run function admin:give/shiny_rock
+# execute as @r[tag=!assassin] at @s run function admin:give/shiny_rock
 
 # # ONE-TIME EVERYONE ASSASSIN
 # execute as @a[tag=assassin_1] run loot give @s loot silentlife:one_time_everyone_assassin/assassins_geode_1
