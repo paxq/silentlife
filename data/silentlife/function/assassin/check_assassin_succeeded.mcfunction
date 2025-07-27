@@ -1,5 +1,5 @@
 # Success
-execute as @a[tag=assassin_target, scores={perSessionDeathCount=1..}] run execute if entity @e[type=text_display, tag=session_timer, tag=running, limit=1, scores={session_timer=1..}] run advancement grant @p[tag=assassin, advancements={silentlife:utils/assassin_fail=false}] only silentlife:assassin_succed
+execute as @a[tag=assassin_target, scores={perSessionDeathCount=1..}] run execute if entity @e[type=text_display, tag=session_timer, tag=running, limit=1, scores={session_timer=1..}] run advancement grant @p[tag=assassin, advancements={silentlife:utils/assassin_fail=false}] only silentlife:assassin_succeed
 execute as @a[tag=assassin_target, scores={perSessionDeathCount=1..}] run execute if entity @e[type=text_display, tag=session_timer, tag=running, limit=1, scores={session_timer=1..}] run advancement grant @p[tag=assassin, advancements={silentlife:utils/assassin_fail=false}] only silentlife:utils/assassin_kill
 
 # Failure
