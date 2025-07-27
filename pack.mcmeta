@@ -1,6 +1,6 @@
 {
     "pack" : {
       "pack_format" : 71,
-      "description" : "Silent Life Official Datapack"
+      "description" : {"text":"Silent Life Official Datapack", "color":"green"}
     }
   }
