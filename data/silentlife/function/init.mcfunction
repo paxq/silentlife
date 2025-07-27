@@ -4,15 +4,14 @@ title @a times 0t 1.2s 5t
 
 # Create scores
 scoreboard objectives add deathCount deathCount deathCount
+scoreboard objectives add perSessionDeathCount deathCount
 scoreboard objectives add lifeDisplay dummy
 scoreboard objectives add killCount dummy
 scoreboard objectives add lone_survivor_check dummy
 scoreboard objectives add assassin_tracking_score dummy
 scoreboard objectives add right_click_detection minecraft.used:warped_fungus_on_a_stick right_click_detection
 scoreboard objectives add ritual_progress dummy
-
 scoreboard objectives add general_variables dummy
-
 
 scoreboard objectives setdisplay list lifeDisplay
 
@@ -74,7 +73,9 @@ summon block_display -78.05 -17 27.95 {transformation:{left_rotation:[0f,0f,0f,1
 
 
 # Black Hole
-execute unless entity @e[type=item_display, tag=black_hole] run summon item_display -53 147 37 {HasVisualFire:1b,item_display:"gui",Tags:["black_hole"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,5f,1f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}
+kill @e[type=item_display, tag=black_hole]
+execute unless entity @e[type=item_display, tag=black_hole] run summon item_display -53 147 37 {HasVisualFire:1b,item_display:"gui",Tags:["black_hole"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,5f,1f],translation:[0f,0f,0f],scale:[5.2f,5.2f,5.2f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}
+execute unless entity @e[type=item_display, tag=black_hole] run execute in silentlife:after run summon item_display -53 100 37 {HasVisualFire:1b,item_display:"gui",Tags:["black_hole"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,5f,1f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}
 
 
 # Update Player lives
