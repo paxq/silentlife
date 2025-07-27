@@ -1,3 +1,9 @@
 /.DS_Store
 /Templates
-data/life_vessel
+
+data/.DS_Store
+
+data/admin/.DS_Store
+data/life_vessel/.DS_Store
+data/silentlife/.DS_Store
+data/minecraft/.DS_Store
