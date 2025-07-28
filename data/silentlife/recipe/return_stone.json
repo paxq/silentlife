@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:knowledge_book",
+    "netherite_ingot",
+    "nether_star",
+    "minecraft:silence_armor_trim_smithing_template"
+  ],
+  "result": {
+    "id": "minecraft:warped_fungus_on_a_stick",
+    "components": {
+      "minecraft:item_name": "Return Stone",
+      "minecraft:item_model": "silentlife:return_stone",
+      "minecraft:lore": [
+        "A stone used to escape from purgatory."
+      ]
+    },
+    "count": 1
+  }
+}

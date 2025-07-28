@@ -20,6 +20,7 @@ function silentlife:assassin/check_assassin_succeeded
 execute as @a[scores={right_click_detection=1..}, nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:item_model":"silentlife:warp_stone"},count:1}}] at @s run function silentlife:items/handle_warp
 execute as @a[scores={right_click_detection=1..}, nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:item_model":"silentlife:assassins_geode"},count:1}}] at @s run function silentlife:items/assassin_geode
 execute as @a[scores={right_click_detection=1..}, nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:item_model":"silentlife:full_summoning_stone"},count:1}}] at @s run function silentlife:items/summoning_stone
+execute as @a[scores={right_click_detection=1..}, nbt={SelectedItem:{id:"minecraft:warped_fungus_on_a_stick",components:{"minecraft:item_model":"silentlife:return_stone"},count:1}}] at @s run function silentlife:items/return_stone
 
 # Dropped Immunity Idol
 execute as @e[type=item, nbt={Item:{id:"minecraft:ominous_trial_key",count:1,components:{"minecraft:item_model":"silentlife:immunity_idol"}}}] at @s run function silentlife:items/replace_idol
