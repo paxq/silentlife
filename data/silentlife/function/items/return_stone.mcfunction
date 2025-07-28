@@ -10,3 +10,5 @@ scoreboard players set @s lifeDisplay 3
 
 gamemode survival @s
 execute in minecraft:overworld run tp @s @e[tag=black_hole_ov, type=item_display, sort=nearest, limit=1]
+
+advancement grant @s only silentlife:leave_after
