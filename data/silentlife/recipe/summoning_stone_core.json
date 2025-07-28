@@ -18,7 +18,6 @@
         "text": "Crystal Core",
         "color": "blue"
       },
-      "minecraft:item_model": "minecraft:knowledge_book",
       "minecraft:lore": [
         "The core of an ancient stone."
       ]
