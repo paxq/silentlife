@@ -5,12 +5,16 @@
     "minecraft:knowledge_book",
     "netherite_ingot",
     "nether_star",
-    "minecraft:silence_armor_trim_smithing_template"
+    "minecraft:silence_armor_trim_smithing_template",
+    "minecraft:diamond"
   ],
   "result": {
     "id": "minecraft:warped_fungus_on_a_stick",
     "components": {
-      "minecraft:item_name": "Return Stone",
+      "minecraft:item_name": {
+        "text": "Return Stone",
+        "color": "dark_purple"
+      },
       "minecraft:item_model": "silentlife:return_stone",
       "minecraft:lore": [
         "A stone used to escape from purgatory."

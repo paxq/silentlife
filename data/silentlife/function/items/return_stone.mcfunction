@@ -4,6 +4,8 @@ effect give @s blindness 5 20
 effect give @s slowness 5 5
 effect give @s hunger 1 1
 
+playsound block.end_portal.spawn master @a
+
 scoreboard players set @s lifeDisplay 3
 
 gamemode survival @s
