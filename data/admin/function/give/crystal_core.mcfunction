@@ -1,0 +1,1 @@
+give @s knowledge_book[item_name={text:"Crystal Core", color:"blue"}, lore=["The core of an ancient stone."]] 1
