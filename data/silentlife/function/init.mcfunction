@@ -74,8 +74,8 @@ summon block_display -78.05 -17 27.95 {transformation:{left_rotation:[0f,0f,0f,1
 
 # Black Hole
 kill @e[type=item_display, tag=black_hole]
-execute unless entity @e[type=item_display, tag=black_hole] run summon item_display -53 147 37 {HasVisualFire:1b,item_display:"gui",Tags:["black_hole"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,5f,1f],translation:[0f,0f,0f],scale:[5.2f,5.2f,5.2f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}
-execute unless entity @e[type=item_display, tag=black_hole] run execute in silentlife:after run summon item_display -53 100 37 {HasVisualFire:1b,item_display:"gui",Tags:["black_hole"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,5f,1f],translation:[0f,0f,0f],scale:[5f,5f,5f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}
+execute unless entity @e[type=item_display, tag=black_hole, tag=black_hole_ov] run summon item_display -53 147 37 {HasVisualFire:1b,item_display:"gui",Tags:["black_hole","black_hole_ov"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,5f,1f],translation:[0f,0f,0f],scale:[5.2f,5.2f,5.2f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}
+execute unless entity @e[type=item_display, tag=black_hole, tag=black_hole_af] run execute in silentlife:after run summon item_display -53 147 37 {HasVisualFire:1b,item_display:"gui",Tags:["black_hole","black_hole_af"],brightness:{sky:12,block:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,10f,1f],translation:[0f,0f,0f],scale:[3f,3f,3f]},item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"silentlife:black_hole"}}}
 
 
 # Update Player lives
