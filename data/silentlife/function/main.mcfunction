@@ -28,5 +28,6 @@ execute as @e[type=item, nbt={Item:{id:"minecraft:ominous_trial_key",count:1,com
 # Tick ritual
 function silentlife:ritual/tick
 
-# Handle black hole
+# Handle black holes & after
 execute as @e[tag=black_hole, tag=black_hole_af, type=item_display, limit=1] at @s run execute as @a[distance=..3] run execute in minecraft:overworld run tp @s ~ ~ ~
+execute as @a[predicate=silentlife:in_after] run effect give @s resistance 1 255 true
