@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick[item_model="silentlife:return_stone",item_name={"color":"green","text":"Return Stone"},lore=["A stone used to escape purgatory."]] 1

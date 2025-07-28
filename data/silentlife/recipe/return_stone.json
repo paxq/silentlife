@@ -13,7 +13,7 @@
     "components": {
       "minecraft:item_name": {
         "text": "Return Stone",
-        "color": "dark_purple"
+        "color": "green"
       },
       "minecraft:item_model": "silentlife:return_stone",
       "minecraft:lore": [
