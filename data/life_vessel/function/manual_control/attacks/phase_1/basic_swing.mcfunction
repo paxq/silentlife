@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick[minecraft:custom_data={custom_tag:"basic_swing",custom_tag_extra:"life_vessel_control"},minecraft:item_name="Basic Swing",lore=["A basic swing from left to right.","Phase: 1"],item_model="minecraft:stone_sword"]
